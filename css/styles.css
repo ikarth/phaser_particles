@@ -1,0 +1,11 @@
+html {
+    font-family: 'Roboto Slab', slab serif, serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+a:link {
+    color: #fd0;
+}
+a:visited {
+    color: #f10;
+}
