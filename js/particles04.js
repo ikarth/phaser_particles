@@ -61,24 +61,24 @@ Play.prototype = {
 
 		// horizontal saw emitter :p w/ +x gravity
 		// change gravity Point values for MAX FUN
-		// emitter = game.add.emitter(0, game.world.centerY, 5000);
-		// emitter.makeParticles(['saw'], 0, 500);
-		// emitter.start(false, 2000, 1, 5000);
-		// let gravity = new Phaser.Point(100,0);
-		// emitter.gravity = gravity;
-		// emitter.setXSpeed(250, 450);
-		// emitter.setYSpeed(0, 0);
-		// let area = new Phaser.Rectangle(0, game.world.centerY, 1, 100);
-		// emitter.area = area;
+		emitter = game.add.emitter(0, game.world.centerY, 5000);
+		emitter.makeParticles(['saw'], 0, 500);
+		emitter.start(false, 2000, 1, 5000);
+		let gravity = new Phaser.Point(100,0);
+		emitter.gravity = gravity;
+		emitter.setXSpeed(250, 450);
+		emitter.setYSpeed(0, 0);
+		let area = new Phaser.Rectangle(0, game.world.centerY, 1, 100);
+		emitter.area = area;
 
 		// center radial 'dust' emitter w/ alpha and scale set, zero gravity
-		emitter = game.add.emitter(game.world.centerX, game.world.centerY, 5000);
-		emitter.makeParticles(['bubble'], 0, 500);
-		emitter.start(false, 5000, 1, 5000);
-		let gravity = new Phaser.Point(0,0);
-		emitter.gravity = gravity;
-		emitter.setAlpha(0.25, 1);
-		emitter.setScale(1, 5, 1, 5);
+// 		emitter = game.add.emitter(game.world.centerX, game.world.centerY, 5000);
+// 		emitter.makeParticles(['bubble'], 0, 500);
+// 		emitter.start(false, 5000, 1, 5000);
+// 		let gravity = new Phaser.Point(0,0);
+// 		emitter.gravity = gravity;
+// 		emitter.setAlpha(0.25, 1);
+// 		emitter.setScale(1, 5, 1, 5);
 	},
 	update: function() {
 		// updates are for chumps

@@ -26,7 +26,7 @@ function pauseGame() {
 var Play = function(game){};
 Play.prototype = {
 	preload: function() {
-		game.load.path = '../assets/img/';
+		game.load.path = 'assets/img/';
 		game.load.image('star', 'star.png');
 		game.load.image('bball', 'bball_tiny.png');
 		game.load.image('stop', 'stop_btn_small.png');
@@ -66,9 +66,9 @@ Play.prototype = {
 		//emitter.start(false, 5000, 15);
 
 		// EXAMPLE 5: raise maxParticles, constant 'fountain' style, multiple particle types
-		//emitter = game.add.emitter(game.world.centerX, game.world.centerY, 500);
-		//emitter.makeParticles(['bball', 'star', 'stop', 'fball']);
-		//emitter.start(false, 5000, 10);
+		emitter = game.add.emitter(game.world.centerX, game.world.centerY, 500);
+		emitter.makeParticles(['bball', 'star', 'stop', 'fball']);
+		emitter.start(false, 5000, 10);
 	},
 	update: function() {
 		// empty, like your soul
